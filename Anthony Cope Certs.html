@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protected Redirect</title>
+    <script>
+        function checkPassword() {
+            var password = prompt("Enter the password:");
+            if (password === "COPE2025") {
+                window.location.href = "https://your-onedrive-link.com";
+            } else {
+                alert("Incorrect password. Try again.");
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <p>If you are not redirected, click <a href="https://your-onedrive-link.com">here</a>.</p>
+</body>
+</html>
